@@ -1,11 +1,13 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
+// Defines character sets for password criteria
 var upperCase = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
 var lowerCase = 'abcdefghijklmnopqrstuvwxyz'.split('');
 var number = '0123456789'.split('');
 var specialChar = '@%+/\'!#$^?:,)(}{][~_.'.split('');
 
+// Promts that ask user for password criteria
 function prompts() {
   var valid = false;
   do {
@@ -31,6 +33,7 @@ function prompts() {
 return alerts;
 }
 
+// Function that calls to the prompts function to generate password
 function generatePassword() {
   var passwordSelctions = prompts();
   var combinations = [];
